@@ -1,0 +1,9 @@
+.home-container {
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    background-image: url('../../../public/home-bg.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}

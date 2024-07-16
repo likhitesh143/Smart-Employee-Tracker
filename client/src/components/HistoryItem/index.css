@@ -1,0 +1,24 @@
+.admin-dashboard-item-body {
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #00ADB5;
+}
+
+.admin-dashboard-item {
+    background-color: transparent;
+    color: #EAEAEA;
+    font-size: 14px;
+    font-weight: 500;
+    width: 25%;
+}
+
+@media screen and (max-width: 768px) {
+    .admin-dashboard-item {
+        font-size: 11px;
+        width: 23%;
+        flex-wrap: wrap;
+    }
+}

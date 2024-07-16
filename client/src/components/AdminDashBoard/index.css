@@ -1,0 +1,141 @@
+.admin-dashboard-container {
+    position: relative;
+    min-height: 100vh;
+    background: hsl(216, 18%, 16%);
+    width: 100%;
+}
+
+.admin-dashboard {
+    width: 100%;
+    padding: 50px;
+    padding-top: 15vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.admin-dashboard-heading {
+    font-size: 30px;
+    color: #F9F7F7;
+    margin-bottom: 30px;
+}
+
+.admin-dashboard-form {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.admin-dashboard-input {
+    width: 55%;
+    height: 35px;
+    border: none;
+    border-radius: 5px;
+    padding-left: 15px;
+    background-color: transparent;
+    border: 1px solid #00ADB5;
+    color: #EAEAEA;
+    outline: none;
+    margin-bottom: 10px;
+}
+
+.admin-dashboard-button {
+    height: 35px;
+    border: none;
+    border-radius: 5px;
+    background-color: #00ADB5;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 5px 16px;
+    cursor: pointer;
+    outline: none;
+    margin-left: 15px;
+    margin-bottom: 10px;
+}
+
+.admin-dashboard-list {
+    width: 80%;
+    padding-left: 0px;
+    list-style-type: none;
+    border-radius: 10px;
+    border: 1px solid #00ADB5;
+}
+
+.admin-dashboard-item-head {
+    background-color: #00ADB5;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 25px;
+    border-radius: 9px 9px 0px 0px;
+}
+
+.admin-dashboard-item-p {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    width: 25%;
+}
+
+.admin-dashboard-list-heading {
+    color: #EAEAEA;
+    font-size: 24px;
+    font-weight: 600;
+    padding-left: 10%;
+    align-self: flex-start;
+    margin-bottom: 20px;
+}
+
+.admin-dashboard-item-not-found {
+    color: #52616B;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 10px 25px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+    .admin-dashboard {
+        padding: 10px;
+        padding-top: 13vh;
+    }
+
+    .admin-dashboard-item-head {
+        padding: 15px;
+    }
+
+    .admin-dashboard-item-p {
+        font-size: 12px;
+        width: 24%;
+    }
+
+    .admin-dashboard-heading {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .admin-dashboard-form {
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .admin-dashboard-input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .admin-dashboard-list {
+        width: 100%;
+    }
+
+    .admin-dashboard-list-heading {
+        padding-left: 0px;
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+}

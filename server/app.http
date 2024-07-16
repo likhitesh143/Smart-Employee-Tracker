@@ -1,0 +1,90 @@
+POST http://localhost:5000/register/
+Content-Type: application/json
+
+{
+    "name": "vandana",
+    "email": "vandana1@gmail.com",
+    "mobile": "9874563210",
+    "securityQues": "fdsajfsa",
+    "securityAns": "fdlskaj",
+    "username": "vandana",
+    "password": "vandana123",
+    "photo": "jfdlksa",
+    "admin": 0
+}
+
+###
+
+GET http://localhost:5000/request/register/all/
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InZhbmRhbmEiLCJpYXQiOjE3MDEwODU0Njd9.jpy2OQJSD0VQFOjCma-svshsjFD3KPHNsDVaFlpu03E
+
+###
+
+POST http://localhost:5000/request/register/ram
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InZhbmRhbmEiLCJpYXQiOjE3MDEwODU0Njd9.jpy2OQJSD0VQFOjCma-svshsjFD3KPHNsDVaFlpu03E
+
+
+###
+
+POST http://localhost:5000/login/
+Content-Type: application/json
+
+{
+    "username": "vandana",
+    "password": "vandana123"
+}
+
+###
+
+POST http://localhost:5000/forgot/
+Content-Type: application/json
+
+{
+    "username": "vandana",
+    "securityQues": "fdsajfsa",
+    "securityAns": "fdlskaj",
+    "newPassword": "vandana143"
+}
+
+###
+
+GET http://localhost:5000/dashboard/akshay/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InZhbmRhbmEiLCJpYXQiOjE3MDEwODU0Njd9.jpy2OQJSD0VQFOjCma-svshsjFD3KPHNsDVaFlpu03E
+
+###
+
+POST http://localhost:5000/history/
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InZhbmRhbmEiLCJpYXQiOjE3MDEwODU0Njd9.jpy2OQJSD0VQFOjCma-svshsjFD3KPHNsDVaFlpu03E
+
+{
+    "username": "vandana",
+    "date": "2021-09-01",
+    "loginTime": "10:00:00"
+}
+
+###
+
+GET http://localhost:5000/history/all/
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InZhbmRhbmEiLCJpYXQiOjE3MDEwODU0Njd9.jpy2OQJSD0VQFOjCma-svshsjFD3KPHNsDVaFlpu03E
+
+###
+
+POST http://localhost:5000/tracker/
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InZhbmRhbmEiLCJpYXQiOjE3MDEwODU0Njd9.jpy2OQJSD0VQFOjCma-svshsjFD3KPHNsDVaFlpu03E
+
+{
+    "username": "vandana",
+    "date": "2021-09-01",
+    "time": "10:00:00",
+    "remarks": "Early Logout"
+}
+
+###
+
+GET http://localhost:5000/tracker/vandana/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InZhbmRhbmEiLCJpYXQiOjE3MDEwODU0Njd9.jpy2OQJSD0VQFOjCma-svshsjFD3KPHNsDVaFlpu03E
